@@ -28,8 +28,8 @@ const InputGroup = () => {
     };
 
     return (
-        <div className="input-group row justify-content-between text-center">
-            <div className="col-md-6">
+        <div className="input-group row justify-content-between">
+            <div className="col-md-6 text-center">
                 <div className="left">
                     <FormControlLabel
                         control={
@@ -60,12 +60,12 @@ const InputGroup = () => {
                     <Toggles />
                 </div>
             </div>
-            <div className="col-md-6">
-                <div className="right">
+            <div className="col-md-6 text-right">
+                <div className="right text-right">
                     <FormControlLabel control={<StyledRadio />} />
                     <FormControlLabel control={<StyledRadio />} />
                 </div>
-                <div className="left d-flex align-items-center mt-2">
+                <div className="left count-btn d-flex align-items-center mt-2">
                     <button className="btn" onClick={decrement}><FaMinus className="math-icon" /></button>
                     <p className="mb-0 count">{count.num}</p>
                     <button className="btn" onClick={increment}><FaPlus className="math-icon" /></button>

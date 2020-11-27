@@ -7,6 +7,8 @@ const StyledMiddleSection=styled.section`
     .various-inputs{
         background-color:#ffffff;
         border-radius:32px;
+        padding-right:2rem;
+        padding-left:2.2rem;
     }
     .mailing-list{
         background-color:#ffffff;
@@ -47,7 +49,7 @@ const MiddleSection = () => {
                         <button className="btn">&#8594;</button>
                     </div>
                 </div>
-                <div className="col-lg-4 various-inputs">
+                <div className="col-lg-4 various-inputs py-4">
                     <InputGroup />
                 </div>
             </div>
