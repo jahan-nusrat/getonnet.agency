@@ -4,6 +4,10 @@ import olive from '../../assets/img/Olive.png'
 import styled from 'styled-components'
 
 const TopSectionStyle= styled.section`
+    .login-section{
+        background-color:#ffffff;
+        border-radius:32px;
+    }
     .summer-sale{
         background-color:#ffffff;
         border-radius:32px;
