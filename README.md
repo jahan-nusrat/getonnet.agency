@@ -1,5 +1,3 @@
-# Geonnet
-
 ![screenshot.png](https://i.ibb.co/54RBtDD/screen.png)
 
 ## <h1>Technology Used</h1>
