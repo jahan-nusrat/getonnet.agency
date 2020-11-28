@@ -1,6 +1,6 @@
 # Geonnet
 
-<img align="left" width="500" height="500" src="https://i.ibb.co/54RBtDD/screen.png">
+![screenshot.png](https://i.ibb.co/54RBtDD/screen.png)
 
 ## <h1>Technology Used</h1>
 - JavaScript
