@@ -6,7 +6,7 @@ import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import StyledRadio from './StyledRadio';
 import Toggles from './Toggle';
 import {FaPlus,FaMinus} from 'react-icons/fa'
-import '../../../styles/button.css';
+import '../../../styles/button.style.scss';
 import SliderInput from './Slider'
 
 const InputGroup = () => {

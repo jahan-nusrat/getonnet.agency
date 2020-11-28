@@ -1,0 +1,27 @@
+.card {
+    .card-btn {
+        padding-left: 0.8rem;
+
+        .btn-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #000000;
+            font-size: 0.9rem;
+        }
+
+        .count {
+            font-weight: 700;
+            padding: 0 1.2rem;
+        }
+
+        .count-btn {
+            height: 30px;
+            width: 30px;
+            background-color: #EFF0F6;
+            border-radius: 50%;
+            position: relative;
+        }
+    }
+}

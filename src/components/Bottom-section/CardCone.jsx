@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import cone from '../../assets/img/Blue Cone.png';
 import {FaPlus,FaMinus} from 'react-icons/fa'
-import '../../styles/card.css';
+import '../../styles/card.style.scss';
 import tag from '../../assets/img/Tag.png';
 
 const CardCone = () => {

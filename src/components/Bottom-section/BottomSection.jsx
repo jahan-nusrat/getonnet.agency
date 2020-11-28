@@ -9,6 +9,7 @@ import second from '../../assets/img/second.png'
 import third from '../../assets/img/third.png'
 import fourth from '../../assets/img/fourth.png'
 import CardCone from './CardCone';
+import '../../styles/bottom.css'
 
 const StyledMiddleSection=styled.section`
     .left{

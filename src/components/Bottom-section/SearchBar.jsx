@@ -4,7 +4,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from "@material-ui/core/TextField";
-import '../../styles/bottom.css'
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -24,7 +23,7 @@ const SearchBar = () => {
             id="outlined-search" 
             type="search" 
             variant="filled"
-            className={classes.formControl}
+            className={`search-btm ${classes.formControl}`}
             InputProps={{
                 startAdornment: (
                     <InputAdornment className={classes.select}>
