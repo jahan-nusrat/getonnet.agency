@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
-import styled from 'styled-components'
 import DropDown from './DropDown';
 import SearchBar from './SearchBar';
 import configure from '../../assets/img/Configure.png';
@@ -9,101 +8,8 @@ import second from '../../assets/img/second.png'
 import third from '../../assets/img/third.png'
 import fourth from '../../assets/img/fourth.png'
 import CardCone from './CardCone';
-import '../../styles/bottom.css'
-
-const StyledMiddleSection=styled.section`
-    .left{
-        background-color:#ffffff;
-        border-radius:32px;
-        text-align:center;
-        padding:  2rem 1.6rem;
-        .textarea{
-            border-radius:16px;
-            padding:0.8rem;
-            background-color:#EFF0F6;
-            border:1px solid transparent;
-            margin-top:3rem;
-        }
-    }
-    .right{
-        background-color:#ffffff;
-        border-radius:32px;
-        height:128px;
-        .right-top{
-            padding:2rem 1rem;
-            .config-btn{
-                width:120px;
-                height:64px;
-                border: 2px solid #D6D8E7;
-                border-radius: 16px;
-            }
-        }
-        .right-bottom-left{
-            .watch{
-                background-color:#ffffff;
-                border-radius:32px;
-                padding:1.5rem 0;
-                button{
-                    font-weight: 600;
-                    color:#5F2EEA;
-                }
-            }
-            .buttons{
-                background-color:#ffffff;
-                border-radius:32px;
-                padding:1.5rem 0;
-                .btn-custom{
-                    border-radius:16px;
-                    font-weight: 600;
-                    padding:0.7rem 2.5rem;
-                }
-                .active{
-                    background-color:#5F2EEA;
-                    color:#ffffff;
-                }
-                .inactive{
-                    background-color:#ffffff;
-                    border:2px solid #5F2EEA;
-                    color:#5F2EEA;
-                }
-            }
-            .people{
-                background-color:#ffffff;
-                border-radius:32px;
-                padding:1.5rem 0;
-                .first{
-                    height:45px;
-                    width:45px;
-                    border-radius:50%;
-                }
-                .second{
-                    height:55px;
-                    width:55px;
-                    border-radius:20px;
-                }
-                .third{
-                    height:65px;
-                    width:65px;
-                    border-radius:20px;
-                }
-                .fourth{
-                    height:70px;
-                    width:70px;
-                    border-radius:16px;
-                }
-            }
-        }
-        .right-bottom-right{
-            .card{
-                border-radius:32px;
-                .card-img-top{
-                    border-top-left-radius:32px;
-                    border-top-right-radius:32px;
-                }
-            }
-        }
-    }
-`
+import '../../styles/bottom.css';
+import '../../styles/bottom.style.scss';
 
 const BottomSection = () => {
     const [active,setActive]= useState({
@@ -119,7 +25,7 @@ const BottomSection = () => {
     }
 
     return (
-        <StyledMiddleSection className="container mt-5">
+        <section className="container mt-5 bottom-section">
             <div className="row">
                 <div className="col-md-3">
                     <div className="left">
@@ -177,7 +83,7 @@ const BottomSection = () => {
                     </div>
                 </div>
             </div>
-        </StyledMiddleSection>
+        </section>
     )
 }
 
