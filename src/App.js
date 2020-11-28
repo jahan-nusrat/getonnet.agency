@@ -4,7 +4,7 @@ import {
     Switch,
     Route
   } from "react-router-dom";
-  import './app.css';
+import './app.style.scss';
 import Home from './components/Home/Home';
 
 const App = () => {

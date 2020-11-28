@@ -66,7 +66,7 @@ const InputGroup = () => {
                     <FormControlLabel control={<StyledRadio />} />
                     <FormControlLabel control={<StyledRadio />} />
                 </div>
-                <div className="left count-btn d-flex align-items-center mt-2">
+                <div className="left p-2 count-btn d-flex align-items-center mt-2">
                     <button className="btn" onClick={decrement}><FaMinus className="math-icon" /></button>
                     <p className="mb-0 count">{count.num}</p>
                     <button className="btn" onClick={increment}><FaPlus className="math-icon" /></button>

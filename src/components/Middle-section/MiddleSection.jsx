@@ -1,44 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import InputGroup from './InputGroup/InputGroup'
-
-const StyledMiddleSection=styled.section`
-    .various-inputs{
-        background-color:#ffffff;
-        border-radius:32px;
-        padding-right:2rem;
-        padding-left:2.2rem;
-    }
-    .mailing-list{
-        background-color:#ffffff;
-        border-radius: 32px;
-        padding: 2rem 1.6rem;
-        h3{
-            font-weight:700;
-            font-size: 2rem;
-        }
-        p{
-            font-size:1.3rem;
-        }
-    }
-    .mail-form{
-        button{
-            background-color:#5F2EEA;
-            margin-left: 1rem;
-            color: #FFFFFF;
-            width:80px;
-            border-radius: 16px;
-        }
-        input{
-            border-radius:16px;
-        }
-    }
-`
+import '../../styles/middle.style.scss'
 
 const MiddleSection = () => {
     return (
-        <StyledMiddleSection className="container mt-5">
+        <section className="container mt-5 middle-Section">
             <div className="row justify-content-between">
                 <div className="col-lg-7 mailing-list">
                     <FaRegTimesCircle />
@@ -53,7 +20,7 @@ const MiddleSection = () => {
                     <InputGroup />
                 </div>
             </div>
-        </StyledMiddleSection>
+        </section>
     )
 }
 
