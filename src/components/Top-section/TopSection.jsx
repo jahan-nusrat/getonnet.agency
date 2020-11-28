@@ -5,14 +5,17 @@ import styled from 'styled-components'
 
 const TopSectionStyle= styled.section`
     .login-section{
-        background-color:#ffffff;
-        border-radius:32px;
+        .top-login{
+            background-color:#ffffff;
+            border-radius:32px;
+        }
     }
     .summer-sale{
-        background-color:#ffffff;
-        border-radius:32px;
-        padding: 2rem 1.8rem;
-        .summer-left-side{
+        .top-sale{
+            background-color:#ffffff;
+            border-radius:32px;
+            padding:2rem 2.2rem;
+            .summer-left-side{
             padding-right: 1.8rem;
             h2{
             font-weight:700;
@@ -21,31 +24,36 @@ const TopSectionStyle= styled.section`
             p{
                 font-size: 1.5rem;
             }
-        }
-        .summer-right-side{
-            img{
-                width:340px;
-                height: auto;
+            .btn-sale{
+                border-radius:40px;
+                border: 2px solid #D6D8E7;
+                color: #5F2EEA;
+                font-weight: 600;
             }
+        }
         }
     }
 `
 
 const TopSection = () => {
     return (
-        <TopSectionStyle className="container">
-            <div className="row justify-content-between">
-                <div className="col-md-5 login-section">
-                    <Login />
-                </div>
-                <div className="col-md-6 summer-sale d-flex align-items-center">
-                    <div className="summer-left-side">
-                        <h2>Summer Sale</h2>
-                        <p>25% Off Now through sunday for all in-store purchases.</p>
-                        <button className="btn btn-info">Shop Now</button>
+        <TopSectionStyle className="container mt-5">
+            <div className="row justify-content-center">
+                <div className="col-md-5 col-sm-5 col-10 login-section mb-3">
+                    <div className="top-login py-5">
+                        <Login />
                     </div>
-                    <div className="summer-right-side">
-                        <img src={olive} alt="olive leaves" className="img-fluid"/>
+                </div>
+                <div className="col-md-7 col-sm-6 col-12 summer-sale pl-5 pr-4">
+                    <div className="top-sale row align-items-center">
+                        <div className="summer-left-side col-6">
+                            <h2>Summer Sale</h2>
+                            <p>25% Off Now through sunday for all in-store purchases.</p>
+                            <button className="btn btn-sale px-4 py-3">Shop Now</button>
+                        </div>
+                        <div className="summer-right-side col-6">
+                            <img src={olive} alt="olive leaves" className="img-fluid"/>
+                        </div>
                     </div>
                 </div>
             </div>

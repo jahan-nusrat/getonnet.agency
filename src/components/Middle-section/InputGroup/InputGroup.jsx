@@ -29,9 +29,9 @@ const InputGroup = () => {
     };
 
     return (
-        <div className="input-group row justify-content-between">
-            <div className="col-md-6 text-center">
-                <div className="left">
+        <div className="input-group row justify-content-center">
+            <div className="col-md-6 col-6 text-center">
+                <div className="left d-flex justify-content-center">
                     <FormControlLabel
                         control={
                             <Checkbox 
@@ -62,17 +62,17 @@ const InputGroup = () => {
                 </div>
             </div>
             <div className="col-md-6 text-right">
-                <div className="right text-right">
+                <div className="right text-center pl-3">
                     <FormControlLabel control={<StyledRadio />} />
                     <FormControlLabel control={<StyledRadio />} />
                 </div>
-                <div className="left p-2 count-btn d-flex align-items-center mt-2">
+                <div className="left p-2 count-btn d-flex align-items-center justify-content-center mt-2">
                     <button className="btn" onClick={decrement}><FaMinus className="math-icon" /></button>
                     <p className="mb-0 count">{count.num}</p>
                     <button className="btn" onClick={increment}><FaPlus className="math-icon" /></button>
                 </div>
             </div>
-            <div className="col-md-12">
+            <div className="col-md-12 text-center">
                 {/* <input type="range" class="form-control-range" /> */}
                 <SliderInput />
             </div>

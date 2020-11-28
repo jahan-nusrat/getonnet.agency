@@ -49,7 +49,7 @@ export default function SliderInput() {
     return (
         <div className={classes.root}>
             <div className={classes.margin} />
-            <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={40} />
+            <PrettoSlider className="pl-4" valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={40} />
         </div>
     );
 }
