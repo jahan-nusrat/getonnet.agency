@@ -1,0 +1,31 @@
+form {
+    .MuiFormControl-root {
+        label {
+            margin-top: -10px;
+        }
+
+        .MuiIconButton-root {
+            padding-left: 0;
+            padding-right: 0.8rem;
+            color: #000000;
+        }
+
+        .MuiFilledInput-input:-webkit-autofill {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+        .MuiFilledInput-input {
+            padding: 8px 0px !important;
+        }
+
+        .MuiInputBase-input {
+            margin-top: 15px;
+        }
+
+        .btn-login {
+            background-color: #5F2EEA;
+            border-radius: 16px;
+        }
+    }
+}

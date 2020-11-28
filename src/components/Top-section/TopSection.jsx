@@ -8,13 +8,18 @@ const TopSectionStyle= styled.section`
         .top-login{
             background-color:#ffffff;
             border-radius:32px;
+            h3{
+                color: #14142B;
+                font-weight:bold;
+                font-size:32px;
+            }
         }
     }
     .summer-sale{
         .top-sale{
             background-color:#ffffff;
             border-radius:32px;
-            padding:2rem 2.2rem;
+            padding:2.5rem 2.2rem;
             .summer-left-side{
             padding-right: 1.8rem;
             h2{
@@ -22,7 +27,7 @@ const TopSectionStyle= styled.section`
             font-size: 3rem;
             }
             p{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             .btn-sale{
                 border-radius:40px;
@@ -40,7 +45,8 @@ const TopSection = () => {
         <TopSectionStyle className="container mt-5">
             <div className="row justify-content-center">
                 <div className="col-md-5 col-sm-5 col-10 login-section mb-3">
-                    <div className="top-login py-5">
+                    <div className="top-login pb-5 pt-4">
+                        <h3 className="pl-5 pt-3 pb-4">Login</h3>
                         <Login />
                     </div>
                 </div>
@@ -48,8 +54,8 @@ const TopSection = () => {
                     <div className="top-sale row align-items-center">
                         <div className="summer-left-side col-6">
                             <h2>Summer Sale</h2>
-                            <p>25% Off Now through sunday for all in-store purchases.</p>
-                            <button className="btn btn-sale px-4 py-3">Shop Now</button>
+                            <p className="py-3">25% Off Now through sunday for all in-store purchases.</p>
+                            <button className="btn btn-sale px-4 py-3 mb-2">Shop Now</button>
                         </div>
                         <div className="summer-right-side col-6">
                             <img src={olive} alt="olive leaves" className="img-fluid"/>

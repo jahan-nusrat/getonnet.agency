@@ -11,7 +11,7 @@ const MiddleSection = () => {
                     <div className="mail-left">
                         <FaTimes className="close-icon" />
                         <h3>Join our mailing list.</h3>
-                        <p className="py-2">Receive 15% off your order at checkout and save today!</p>
+                        <p className="py-2 px-1">Receive 15% off your order at checkout and save today!</p>
                         <div className="mail-form py-2 d-flex justify-content-center">
                             <input type="email" className="form-control w-50" placeholder="Email Address" />
                             <button className="btn">&#8594;</button>

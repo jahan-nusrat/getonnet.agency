@@ -11,6 +11,7 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import useStyles from '../../../styles/LoginForm';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import '../../../styles/login.style.scss';
 
 export default function Login() {
   const classes = useStyles();
@@ -33,13 +34,14 @@ export default function Login() {
 
   return (
       <div className={classes.paper}>
-          <h3 className="text-left">Login</h3>
-        <form className={classes.root} noValidate autoComplete="off">
+        <form className={classes.root} noValidate autoComplete="off" onSubmit={handleMouseDownPassword}>
             <TextField 
+                className="log"
                 id="filled-basic"
                 variant="filled"
                 label="Email Address"
                 name="email"
+                style={{marginBottom:'2rem'}}
                 InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -69,15 +71,7 @@ export default function Login() {
             }
           />
         </FormControl>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign In
-          </Button>
+          <Button type="submit" style={{backgroundColor:' #5F2EEA',color:'#ffffff',borderRadius:'16px',fontWeight:'600',width:'325px'}} className="btn btn-login mt-4 py-3">Login</Button>
         </form>
       </div>
   );
