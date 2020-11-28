@@ -7,6 +7,7 @@ import StyledRadio from './StyledRadio';
 import Toggles from './Toggle';
 import {FaPlus,FaMinus} from 'react-icons/fa'
 import '../../../styles/button.css';
+import SliderInput from './Slider'
 
 const InputGroup = () => {
     const [count,setCount] = useState({num:1})
@@ -70,6 +71,10 @@ const InputGroup = () => {
                     <p className="mb-0 count">{count.num}</p>
                     <button className="btn" onClick={increment}><FaPlus className="math-icon" /></button>
                 </div>
+            </div>
+            <div className="col-md-12">
+                {/* <input type="range" class="form-control-range" /> */}
+                <SliderInput />
             </div>
         </div>
     )
